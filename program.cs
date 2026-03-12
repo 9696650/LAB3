@@ -33,7 +33,7 @@ namespace LAB_3 {
             Console.WriteLine("TR3 -- :");
             Print(TR3);
 
-            // множимо
+            
             TR1 = TR2 * TR3;
 
             Console.WriteLine("TR1 = TR2 * TR3:");
