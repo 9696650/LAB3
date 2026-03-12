@@ -21,7 +21,7 @@ namespace LAB_3
             public double D { get { return d; } }
             public double H { get { return h; } }
 
-            // конструктор без параметрів
+         
             public Trapezoid()
             {
                 a = 1;
@@ -31,7 +31,7 @@ namespace LAB_3
                 h = 1;
             }
 
-            // конструктор з параметрами
+     
             public Trapezoid(double a, double b, double c, double d, double h)
             {
                 this.a = a;
@@ -41,7 +41,7 @@ namespace LAB_3
                 this.h = h;
             }
 
-            // конструктор копіювання
+          
             public Trapezoid(Trapezoid t)
             {
                 a = t.a;
@@ -51,25 +51,23 @@ namespace LAB_3
                 h = t.h;
             }
 
-            // площа
             public double Area()
             {
                 return (a + b) / 2 * h;
             }
 
-            // периметр
+           
             public double Perimeter()
             {
                 return a + b + c + d;
             }
 
-            // оператор --
+          
             public static Trapezoid operator --(Trapezoid t)
             {
                 return new Trapezoid(t.a - 1, t.b - 1, t.c - 1, t.d - 1, t.h - 1);
             }
 
-            // оператор *
             public static Trapezoid operator *(Trapezoid t1, Trapezoid t2)
             {
                 return new Trapezoid(
